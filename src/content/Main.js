@@ -1,16 +1,18 @@
 import React from "react";
-import { Link } from "react-router";
+//import { Link } from "react-router";
 
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import Slider from "./Slider";
-import Landing from "./Landing";
+//import Landing from "./Landing";
 
-
+//add CSS!
+import './css/half-slider.css'
+import './css/bootstrap.css'
 
 export default class Layout extends React.Component {
   render() {
-    const { location } = this.props;
+   // const { location } = this.props;
     const containerStyle = {
       marginTop: "60px"
     };

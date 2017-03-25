@@ -1,37 +1,39 @@
 import React from 'react';
 import {React_Boostrap_Carousel} from 'react-boostrap-carousel';
-import './css/bootstrap.min.css';
-import './css/react-boostrap-carousel.css';
 
   class Slider extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
       return(
-        <div >
-          <React_Boostrap_Carousel animation={true} className="carousel-fade">
-            <div >
-              <div  >
-                   <img src="../images/animal.jpg" alt="3D"  />
+        <div className="carousel slide">
+          <React_Boostrap_Carousel animation={true} className="carousel-inner">
+            <div className='item active'>
+              <img className='fill' src="../images/animal.jpg" role="presentation"/>
+              <div className="carousel-caption">
+                <h1>3D Animal</h1>
               </div>
-                <div className="carousel-caption">
-                    <h1>3D Animal</h1>
-                </div>
             </div>
-            <div style={{height:300,width:"100%",backgroundColor:"aqua"}}>
-              456
+            <div className='item'>
+              <img className='fill' src="../images/roundel.jpg" role="presentation"/>
+              <div className="carousel-caption">
+                <h1>Target (Roundel)</h1>
+              </div>
             </div>
-            <div style={{height:300,width:"100%",backgroundColor:"lightpink"}}>
-              789
+            <div className='item'>
+              <img className='fill' src="../images/face.jpg" role="presentation"/>
+              <div className="carousel-caption">
+                <h1>Paper Face</h1>
+              </div>
             </div>
-            <div style={{height:300,width:"100%",backgroundColor:"SlateGray"}}>
-              555
+            <div className='item'>
+              <img className='fill' src="../images/indoor.jpg" role="presentation"/>
+              <div className="carousel-caption">
+                <h1>Indoor Range</h1>
+              </div>
             </div>
           </React_Boostrap_Carousel>
         </div>
       )
-}
-};
+    }
+  };
 
 export default Slider;

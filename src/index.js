@@ -6,11 +6,11 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 //new import requirements for routing changes
-import { Router, Link, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 //import CommentView from './commentPage';
+//import NavBar from './content/NavBar';
+//import Footer from './content/Footer';
 import Landing from './content/Landing';
-import NavBar from './content/NavBar';
-import Footer from './content/Footer';
 import Main from './content/Main';
 import About from './content/About';
 import ReviewApp from './ReviewApp';
