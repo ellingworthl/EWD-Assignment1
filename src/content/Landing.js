@@ -13,7 +13,7 @@ var Landing = React.createClass({
 
                         <p>It is a sport which, whilst largely unknown, is in fact highly accessible because it does not have many of the traditonal boundries associated with age, gender or physical fitness.</p>
 
-                        <p>Venues comprise of either outdoor ranges, courses set in wooded areas using target faces (roundels), paper faces or 3D targets, or indoor ranges which generally use target faces.</p>
+                        <p>Venues comprise of either outdoor ranges, courses set in wooded areas using target faces (roundels), paper faces or 3D targets, or indoor ranges which generally just use target faces.</p>
                     </div>
                 </div>
 
