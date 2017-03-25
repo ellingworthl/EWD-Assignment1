@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 
 var Landing = React.createClass({
   render: function(){
@@ -18,7 +18,6 @@ var Landing = React.createClass({
                 </div>
 
                 <hr />
-
 
             </div>
 

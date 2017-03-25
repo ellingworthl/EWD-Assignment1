@@ -5,7 +5,7 @@ import api from './data/stubAPI';
 import { Link } from 'react-router';
 import './styling/css/half-slider.css';
 
-//HOW TO FIX  no-undef for 'f', 's', 'a' *** handle events for submissions
+//TO DO: Fix  no-undef for 'f', 's', 'a'
 var Form = React.createClass({
    getInitialState: function() {
        return { title: '', link: '', forename: ''};
@@ -104,9 +104,8 @@ var NewsList = React.createClass({
 }) ;  
 
 
-//adding a new review item is handled by "addPost"
 
-var ReviewAppOrig = React.createClass({ 
+var ReviewApp = React.createClass({ 
     componentWillUnmount: function() {
        api.persist() ;
     },
@@ -134,4 +133,4 @@ var ReviewAppOrig = React.createClass({
     }
 });
 
-export default ReviewAppOrig;
+export default ReviewApp;
