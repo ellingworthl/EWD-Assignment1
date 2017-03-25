@@ -3,7 +3,6 @@ import _ from 'lodash';
 import api from './data/stubAPI';
 //new import to support routing
 import { Link } from 'react-router';
-import './styling/css/half-slider.css';
 
 //TO DO: Fix  no-undef for 'f', 's', 'a'
 var Form = React.createClass({
@@ -86,11 +85,8 @@ var line ;
   }
 }) ;
 
-//no change to code because of routing
 var NewsList = React.createClass({
-    render : function() {
-      //console.log('NewsList')
-      //console.log(this.props.posts)    
+    render : function() {  
       var items = this.props.posts.map(function(post,index) {
          return <NewsItem key={index} post={post} 
             upvoteHandler={this.props.upvoteHandler}  /> ;
@@ -125,6 +121,10 @@ var ReviewApp = React.createClass({
           );
         return (
            <div >
+		   
+			<h1>Reviews Page</h1>
+			<p>Please find below a selection of reviews and links related to Field Archery.  Reviews are sorted by most popular ('thumbs-up').</p>
+		   
                <NewsList posts={posts} 
                     upvoteHandler={this.incrementUpvote} />
                <Form addHandler={this.addPost}  />

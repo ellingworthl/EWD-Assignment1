@@ -6,8 +6,10 @@ var VenueApp = React.createClass({
       <div>
 
         <h1>Field Archery Venues</h1>
+		
+		<p>A list of clubs, and their details, can be found here.</p>
 
-        <p>CONTENT UNDER CONSTRUCTION</p>
+        <p>PAGE UNDER CONSTRUCTION</p>
    
 
       </div>
